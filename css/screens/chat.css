@@ -90,7 +90,7 @@
 }
 
 .message-row--own .message__bubble {
-    background-color: var(--yellow);
+    background-color: #ede1b7;
     border-radius: 15px 0px 15px 15px;
     margin-left: 5px;
     margin-right: 0px;
@@ -131,8 +131,8 @@
 .reply__column:last-child > i,
 .reply__column:last-child button {
     position: absolute;
-    right: -3px;
-    top: 2px;
+    right: 5px;
+    top: 5px;
 }
 .reply__column:last-child > i{
     right: 40px;
@@ -140,7 +140,7 @@
 }
 
 .reply__column button {
-    background-color: var(--yellow);
+    background-color: #ede1b7;
     border: none;
     width: 30px;
     height: 30px;
@@ -207,7 +207,7 @@
 }
 
 .message1 {
-    animation: appear-left 1s ease-in-out;
+    animation: appear-left 1s ease-in-out forwards;
 }
 .message2 {
     animation: appear-right 1s ease-in-out forwards;
@@ -215,12 +215,12 @@
     opacity: 0;
 }
 .message3 {
-    animation: appear-left 1s ease-in-out;
+    animation: appear-left 1s ease-in-out forwards;
     animation-delay: 2s;
     opacity: 0;
 }
 .message4 {
     animation: appear-right 1s ease-in-out forwards;
-    animation-delay: 1s;
+    animation-delay: 3s;
     opacity: 0;
 }
