@@ -15,3 +15,41 @@
 .settings__setting-column:last-child {
     opacity: 0.5;
 }
+.settings__setting-column:first-child {
+    display: flex;
+    justify-content: start;
+}
+
+@keyframes settings_rotate {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.settings__new {
+    background-color: tomato;
+    border-radius: 50%;
+    font-size: 16px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: settings_rotate 2s ease-in-out infinite;
+}
+
+.setting_header {
+    padding-top: 50px;
+}
+
+.setting_width {
+    width: 50px;
+}
