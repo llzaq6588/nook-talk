@@ -1,0 +1,71 @@
+.nooktalk {
+    background-color: #5cccbf;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+    position: fixed;
+}
+
+.nooktalk__cloud {
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+.nooktalk__img {
+    transform: translateX(70px);
+}
+
+.nooktalk__cloud1 {
+    width: 400px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: var(--white);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nooktalk__cloud2 {
+    width: 370px;
+    height: 100px;
+    border-radius: 25px;
+    background-color: var(--white);
+    position: absolute;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nooktalk__cloud2 span {
+    transform: translateY(-15px);
+    font-size: 25px;
+}
+
+.nooktalk__name {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 2;
+    transform: translateY(-7px) rotateZ(-10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nooktalk__name span {
+    display: block;
+    font-size: 20px;
+    width: 70px;
+    height: 25px;
+    background-color: rgb(195, 104, 38);
+    border-radius: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:645px){
+    .nooktalk__nomobile {
+        display: none;
+    }
+}

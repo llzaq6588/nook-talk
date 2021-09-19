@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to NOOKTALK</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>NOOKCOM</span>
+            <i class="fas fa-signal"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>09:10</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">너굴톡에 오신것을 환영합니다.</h1>
+        <p class="welcome-header__text">
+            너굴톡 어카운트는 NOOK.Inc에 문의하시기 바랍니다.
+        </p>
+    </header>
+
+    <form action="logo1.html" method="GET" id="login-form">
+        <input name="username" type="text" placeholder="ID" required/>
+        <input name="password" type="password" placeholder="비밀번호" required/>
+        <input type="submit" value="Log In" />
+        <a href="#">콩돌 밤돌 핼프 서비스</a>
+    </form>
+
+    <div class="nooktalk nooktalk__nomobile">
+        <div class="nooktalk__cloud">
+            <div class="nooktalk__cloud1">
+                <div class="nooktalk__name">
+                    <span>너굴</span>
+                </div>
+                <div class="nooktalk__cloud2">
+                    <span>화면 너비가 너무 크다구리.</span>
+                </div>
+            </div>
+        </div>
+        <div class="nooktalk__img">
+            <img src="img/nook.gif" />
+        </div>
+    </div>
+    <div id="splash-screen"></div>
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

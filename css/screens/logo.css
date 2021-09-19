@@ -1,0 +1,169 @@
+@import "reset.css";
+
+.logo1__body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoBG1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(89, 72, 70, 1);
+    animation: change_bg 10s ease-in-out;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1 {
+    animation: logo_rotate 3.5s 1s ease-in-out forwards;
+    transform-origin: 45% 50%;
+    display: flex;
+    justify-content: center;
+}
+.logo1 img {
+    width: 20%;
+    height: 20%;
+}
+
+@keyframes change_bg {
+    0% {
+        background-color: rgba(89, 72, 70, 1);     
+    }
+    10% {
+        background-color: rgba(89, 72, 70, 0.8);
+    }
+    40% {
+        background-color: rgba(89, 72, 70, 0);
+    }
+    100% {
+        background-color: rgba(89, 72, 70, 0);
+    }
+}
+
+@keyframes logo_rotate {
+    0% {
+        transform: rotateZ(0deg) scale(1);
+    }
+    15% {
+        transform: rotateZ(0deg) scale(1);
+    }
+    90% {
+        transform: rotateZ(360deg) scale(10);
+    }
+    100% {
+        transform: rotateZ(360deg) scale(10);
+    }
+}
+
+.logo2__BGC {
+    overflow:hidden;
+    background-color: #fffdf1;
+}
+
+.logo2__outside {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: appearani 8s ease-in-out forwards;
+}
+
+.logo2__sea2 {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    animation: movesee 10s linear forwards;
+}
+.logo2__island {
+    width: 300px;
+    position: fixed;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    top: 55%;
+    animation: movetop_island 10s ease-in-out forwards;
+    display: flex;
+    justify-content: center;
+}
+.logo2__sea1 {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    animation: movesee 10s linear;
+}
+.logo2__text {
+    position: fixed;
+    top: 18%;
+    animation: movetop_text 10s ease-in-out forwards;
+}
+.logo2__text span {
+    font-size: 50px;
+}
+
+@keyframes appearani {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;  
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes movetop_text {
+    0% {
+        opacity: 0;
+        top: 22%;
+    }
+    20% {
+        top: 15%;
+        opacity: 1;
+    }
+    100% {
+        top: 15%;
+        opacity: 1;
+    }
+}
+
+@keyframes movetop_island {
+    0% {
+        opacity: 0;
+        top: 55%;
+    }
+    20% {
+        top: 35%;
+        opacity: 1;
+    }
+    100% {
+        top: 35%;
+        opacity: 1;
+    }
+}
+
+@keyframes movesee {
+    0% {
+        right: 100px;
+    }
+    100% {
+        right: 1000px;
+    }
+}
